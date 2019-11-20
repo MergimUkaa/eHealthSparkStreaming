@@ -33,7 +33,8 @@ public class Helper {
                         rs.getDouble(7),
                         rs.getDouble(8),
                         rs.getDouble(9),
-                        rs.getDouble(10)));
+                        rs.getDouble(10),
+                        rs.getString(11)));
             }
         } catch (SQLException e) {
             e.printStackTrace();

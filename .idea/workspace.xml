@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b160a3f-ddef-40b7-98e1-a88162e6e017" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Helpers/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Helpers/JsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Helpers/MySQLConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/PatientRecordForProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Helpers/Helper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Helpers/JsonParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Helpers/MySQLConnection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Models/PatientRecordForProcessing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/CassandraModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/KafkaPatientRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/KafkaPatientRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/PatientRecordForProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/PatientRecordForProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Helpers/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Helpers/Helper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/KafkaPatientRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/KafkaPatientRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/PatientRecordForProcessing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/PatientRecordForProcessing.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +49,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ehealth-web" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -125,6 +121,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ehealth$Main.ic" NAME="Main Coverage Results" MODIFIED="1574279675169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ehealth$JavaCustomReceiver.ic" NAME="JavaCustomReceiver Coverage Results" MODIFIED="1568321442159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

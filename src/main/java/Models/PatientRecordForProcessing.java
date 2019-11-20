@@ -12,8 +12,9 @@ public class PatientRecordForProcessing implements java.io.Serializable {
     private Double latitude;
     private Double longitude;
     private String status;
+    private String parameterUnit;
 
-    public PatientRecordForProcessing(Integer patientId, Integer visitId, Integer doctorId, Integer sensorId, Double parameterMinValue, Double parameterMaxValue, Double parameterNormalMinValue, Double parameterNormalMaxValue, Double latitude, Double longitude) {
+    public PatientRecordForProcessing(Integer patientId, Integer visitId, Integer doctorId, Integer sensorId, Double parameterMinValue, Double parameterMaxValue, Double parameterNormalMinValue, Double parameterNormalMaxValue, Double latitude, Double longitude, String parameterUnit) {
         this.patientId = patientId;
         this.visitId = visitId;
         this.doctorId = doctorId;
@@ -24,6 +25,7 @@ public class PatientRecordForProcessing implements java.io.Serializable {
         this.parameterNormalMaxValue = parameterNormalMaxValue;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.parameterUnit = parameterUnit;
     }
 
     public Integer getPatientId() {
@@ -112,5 +114,13 @@ public class PatientRecordForProcessing implements java.io.Serializable {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getParameterUnit() {
+        return parameterUnit;
+    }
+
+    public void setParameterUnit(String parameterUnit) {
+        this.parameterUnit = parameterUnit;
     }
 }
