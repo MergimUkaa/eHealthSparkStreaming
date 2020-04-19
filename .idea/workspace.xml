@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0b160a3f-ddef-40b7-98e1-a88162e6e017" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -86,6 +104,14 @@
       <option name="presentableId" value="Default" />
       <updated>1565443009104</updated>
     </task>
+    <task id="LOCAL-00001" summary="changes at status of processed data from kafka">
+      <created>1587291988374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587291988374</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,11 +126,17 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="changes at status of processed data from kafka" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes at status of processed data from kafka" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="590" y="138" key="CommitChangelistDialog2" timestamp="1587291465834">
+    <state x="590" y="138" width="740" height="596" key="CommitChangelistDialog2" timestamp="1587292074209">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="590" y="138" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1587291465834" />
+    <state x="590" y="138" width="740" height="596" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1587292074209" />
     <state width="1877" height="660" key="GridCell.Tab.0.bottom" timestamp="1587220018179">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
