@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b160a3f-ddef-40b7-98e1-a88162e6e017" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/CassandraModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/PatientRecordForProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/PatientRecordForProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Helpers/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Helpers/Helper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/PatientRecordForProcessing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/PatientRecordForProcessing.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +16,6 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="267" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="ehealth" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,13 +30,16 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1PEd5mnoOW3wDTYsRlfSRnmmZkr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ehealth-web" />
@@ -59,18 +52,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mergim Uka\IdeaProjects\ehealth\src\main\java" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="JavaCustomReceiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -112,16 +93,41 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="590" y="138" key="CommitChangelistDialog2" timestamp="1587291465834">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="590" y="138" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1587291465834" />
+    <state width="1877" height="660" key="GridCell.Tab.0.bottom" timestamp="1587220018179">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="660" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1587220018179" />
+    <state width="1877" height="660" key="GridCell.Tab.0.center" timestamp="1587220018179">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="660" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1587220018179" />
+    <state width="1877" height="660" key="GridCell.Tab.0.left" timestamp="1587220018179">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="660" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1587220018179" />
+    <state width="1877" height="660" key="GridCell.Tab.0.right" timestamp="1587220018179">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="660" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1587220018179" />
+    <state x="462" y="226" key="SettingsEditor" timestamp="1586973724564">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="462" y="226" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1586973724564" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ehealth$Main.ic" NAME="Main Coverage Results" MODIFIED="1574279675169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ehealth$JavaCustomReceiver.ic" NAME="JavaCustomReceiver Coverage Results" MODIFIED="1568321442159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ehealth$Main.ic" NAME="Main Coverage Results" MODIFIED="1574279675169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

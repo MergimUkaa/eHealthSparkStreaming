@@ -30,7 +30,7 @@ public class Main {
 
         // Create a StreamingContext with a 1-second batch size from a SparkConf
         JavaStreamingContext streamingContext = new JavaStreamingContext(
-                sparkConf, Durations.seconds(10));
+                sparkConf, Durations.seconds(5 ));
 
 
         Map<String, Object> kafkaParams = new HashMap<>();
@@ -61,32 +61,51 @@ public class Main {
                     KafkaPatientRecord kafkaData = JsonParser.ParseKafkaData(sensorRDD).get(i);
                     PatientRecordForProcessing patientDatabase = Helper.patientList(sensorRDD).get(i);
 
-                    if (patientDatabase.getParameterUnit().equals("mmHg") || patientDatabase.getParameterUnit().equals("minute")) {
+                    System.out.println("A eshte shtypja e gjakut: " + patientDatabase.getParameterUnit().equals("mmHg"));
+                    if (patientDatabase.getParameterUnit().equals("mmHg")) {
                         if (kafkaData.getMinValue() >= patientDatabase.getParameterNormalMinValue() && kafkaData.getMaxValue() <= patientDatabase.getParameterNormalMaxValue()) {
-                             patientDatabase.setStatus("normal");
+                            patientDatabase.setStatus("normal");
                         }
-                         if (kafkaData.getMaxValue() > (patientDatabase.getParameterMaxValue() - 5)){
+                         else if (kafkaData.getMaxValue() >= (patientDatabase.getParameterMaxValue() - 3)){
                             patientDatabase.setStatus("critical high");
                         }
-                         if (kafkaData.getMinValue() < (patientDatabase.getParameterMinValue() + 5)){
-                            patientDatabase.setStatus("critical low");
-
-                        }
-                         if (kafkaData.getMaxValue() > (patientDatabase.getParameterNormalMaxValue() + 5) && kafkaData.getMaxValue() <= patientDatabase.getParameterMaxValue() -5) {
+                         else if (kafkaData.getMaxValue() >= (patientDatabase.getParameterNormalMaxValue()) && kafkaData.getMaxValue() < (patientDatabase.getParameterMaxValue() - 3)) {
                             patientDatabase.setStatus("high");
                         }
-                         if (kafkaData.getMinValue() < (patientDatabase.getParameterNormalMinValue() -5) && kafkaData.getMinValue() >= patientDatabase.getParameterMinValue() +5) {
+                         else if((kafkaData.getMinValue() < (patientDatabase.getParameterNormalMinValue())) && kafkaData.getMinValue() >= (patientDatabase.getParameterMinValue() + 3)) {
                             patientDatabase.setStatus("low");
                         }
-                    } else {
-                        if (kafkaData.getMinValue() >= patientDatabase.getParameterNormalMinValue() || kafkaData.getMinValue() <= patientDatabase.getParameterNormalMaxValue()){
+                        else if (kafkaData.getMinValue() <= (patientDatabase.getParameterMinValue() + 3)){
+                            patientDatabase.setStatus("critical low");
+                        }
+                        else {
+                            patientDatabase.setStatus("undefined");
+                        }
+                    } else if (patientDatabase.getParameterUnit().equals("minute")){
+                        if (kafkaData.getMinValue() >= patientDatabase.getParameterNormalMinValue() && kafkaData.getMinValue() <= patientDatabase.getParameterNormalMaxValue()){
                             patientDatabase.setStatus("normal");
-                        }else if (kafkaData.getMinValue() <= (patientDatabase.getParameterMinValue() + 0.5)) {
+                        }else if (kafkaData.getMinValue() <= (patientDatabase.getParameterMinValue() + 5)) {
                             patientDatabase.setStatus("critical low");
-                        } else if (kafkaData.getMinValue() >= (patientDatabase.getParameterNormalMinValue() + 0.5) && kafkaData.getMinValue() < patientDatabase.getParameterNormalMinValue()) {
+                        } else if (kafkaData.getMinValue() >= (patientDatabase.getParameterMinValue() + 5) && kafkaData.getMinValue() < patientDatabase.getParameterNormalMinValue()) {
                             patientDatabase.setStatus("low");
-                        }else if (kafkaData.getMinValue() <= (patientDatabase.getParameterMinValue() + 2) && kafkaData.getMinValue() > patientDatabase.getParameterMaxValue()) {
+                        }else if (kafkaData.getMinValue() > (patientDatabase.getParameterNormalMaxValue()) && kafkaData.getMinValue() < patientDatabase.getParameterMaxValue() - 10) {
                             patientDatabase.setStatus("high");
+                        } else {
+                            patientDatabase.setStatus("critical high");
+                        }
+                    }
+                    else {
+                        if (kafkaData.getMinValue() >= patientDatabase.getParameterNormalMinValue() && kafkaData.getMinValue() <= patientDatabase.getParameterNormalMaxValue()){
+                          patientDatabase.setStatus("normal");
+                        }
+                         else if (kafkaData.getMinValue() <= (patientDatabase.getParameterMinValue() + 0.5)) {
+                            patientDatabase.setStatus("critical low");
+                        } else if (kafkaData.getMinValue() >= (patientDatabase.getParameterMinValue() + 0.5) && kafkaData.getMinValue() < patientDatabase.getParameterNormalMinValue()) {
+                            patientDatabase.setStatus("low");
+                        }else if (kafkaData.getMinValue() > (patientDatabase.getParameterNormalMaxValue()) && kafkaData.getMinValue() < patientDatabase.getParameterMaxValue() - 2) {
+                            patientDatabase.setStatus("high");
+                        } else {
+                            patientDatabase.setStatus("critical high");
                         }
                     }
 
@@ -110,7 +129,6 @@ public class Main {
                                 kafkaData.getMaxValue()
                         )
                     );
-
                 }
 //                     making a model for cassandra
                   JavaRDD<CassandraModel> patientRDD = streamingContext.sparkContext().parallelize(cassandraModel);
